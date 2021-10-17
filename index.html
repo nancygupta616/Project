@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Todo List</title>
+
+    <!-- it is connected to one stylesheets -->
+    <link href="https.//fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css"><!-- this is the main stylesheet -->
+    
+    <!-- this script is just for font awesome fonts -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- body -->
+
+<body class="container">
+
+    <header>
+            <h1> Todo List </h1>        
+    </header>
+    <form>
+        <input class ="todo-input" type="text" placeholder="New Task ..." />
+        <button class ="todo-button" type="submit"><i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+       
+    </div>    
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
